@@ -1,0 +1,25 @@
+{
+  "name": "almond-bot",
+  "version": "1.0.0",
+  "description": "Discord bot with the name of my cat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braiandickson/almond-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braiandickson/almond-bot/issues"
+  },
+  "homepage": "https://github.com/braiandickson/almond-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "nodemon": "^2.0.4"
+  }
+}
