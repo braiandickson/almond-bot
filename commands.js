@@ -1,10 +1,14 @@
-const commands = {
-  hola: {
-    messages: []
-  },
-  comandos: {
-    messages: []
-  }
+const commandsDeclaration = ['comandos', 'hola'];
+
+const commands = (user) = {
+  hola: [
+      'Hola, maldite humane, que quieres...?'
+    ],
+  comandos: [
+    `Los comandes son: ${commandsDeclaration}`
+  ]
 };
 
-module.exports = commands;
+const defaultMsg = 'Miau miau, desgraciade!';
+
+module.exports = { commands, commandsDeclaration, defaultMsg };

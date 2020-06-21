@@ -20,6 +20,8 @@
   "homepage": "https://github.com/braiandickson/almond-bot#readme",
   "dependencies": {
     "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
     "nodemon": "^2.0.4"
   }
 }

@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+require('dotenv').config();
 
 const { processCommand } = require('./utils');
 
@@ -10,9 +11,9 @@ client.on('ready', () => {
 
 client.on('message', receiveMessage => {
   if (receiveMessage.author == client.user) return;
-  if (receiveMessage.content.startsWith('!')) {
+  if (receiveMessage.content.startsWith(process.env.PREFIX)) {
     processCommand(receiveMessage);
   }
 });
 
-client.login('NjQ5ODExODQ0MjYwOTU0MTE2.XeCO3g.kx8X9uXaZhKElVewWY_NIwLE2n8');
+client.login(process.env.DISCORD_ID);
