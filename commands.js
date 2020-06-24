@@ -1,14 +1,15 @@
-const commandsDeclaration = ['comandos', 'hola'];
+const { messages, defaultMsg, imgs } = require('./messages');
+
+const commandsDeclaration = ['comandos', 'hola', 'foto'];
 
 const commands = (user) = {
   hola: [
-      'Hola, maldite humane, que quieres...?'
+      messages.hello
     ],
   comandos: [
-    `Los comandes son: ${commandsDeclaration}`
-  ]
+    `${messages.commands} ${commandsDeclaration}`
+  ],
+  foto: imgs
 };
-
-const defaultMsg = 'Miau miau, desgraciade!';
 
 module.exports = { commands, commandsDeclaration, defaultMsg };
