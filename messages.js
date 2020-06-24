@@ -1,7 +1,10 @@
-const messages = {
-  hello: 'Hola, maldite humane, que quieres...?',
-  commands: 'Los comandes son:'
-}
+const commandMessage = 'Les comandes son:';
+
+const greatings = [
+  'Hola, maldite humane, que quieres...?',
+  'Miau?...',
+  'ola ke ase'
+];
 
 const defaultMsg = 'Miau miau, desgraciade!'
 
@@ -38,4 +41,4 @@ const imgs = [
   'https://i.imgur.com/TW9qNjK.jpg',
 ];
 
-module.exports = { messages, defaultMsg, imgs };
+module.exports = { commandMessage, defaultMsg, imgs, greatings };
