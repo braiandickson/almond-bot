@@ -1,10 +1,12 @@
-const { commandMessage, defaultMsg, imgs, greatings } = require('./messages');
+const { commandMessage, defaultMsg, imgs, greatings, randoms } = require('./messages');
+const { getRandomMsg } = require('./utils');
 
 const commandsDeclaration = ['comandos', 'hola', 'foto'];
 
 const commands = (user) = {
-  hola: greatings,
-  foto: imgs,
+  hola: getRandomMsg(greatings),
+  foto: getRandomMsg(imgs),
+  randoms: randoms,
   comandos: [
     `${commandMessage} ${commandsDeclaration}`
   ]

@@ -6,6 +6,12 @@ const greatings = [
   'ola ke ase'
 ];
 
+const randoms = [
+  'Jajaja que idita!',
+  'Miau miau miau hue hue hue',
+  'Que tanta mierda hablan?!'
+];
+
 const defaultMsg = 'Miau miau, desgraciade!'
 
 const imgs = [
@@ -41,4 +47,4 @@ const imgs = [
   'https://i.imgur.com/TW9qNjK.jpg',
 ];
 
-module.exports = { commandMessage, defaultMsg, imgs, greatings };
+module.exports = { commandMessage, defaultMsg, imgs, greatings, randoms };
