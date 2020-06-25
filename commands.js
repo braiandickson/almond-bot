@@ -3,12 +3,10 @@ const { commandMessage, defaultMsg, imgs, greatings, randoms } = require('./mess
 
 const commandsDeclaration = ['comandos', 'hola', 'foto'];
 
-const getRandomMsg = list => _.sample(list);
-
 const commands = {
-  hola: () => getRandomMsg(greatings),
-  foto: () => getRandomMsg(imgs),
-  randoms: () => getRandomMsg(randoms),
+  hola: () => _.sample(greatings),
+  foto: () => _.sample(imgs),
+  randoms: () => _.sample(randoms),
   comandos: () => `${commandMessage} ${commandsDeclaration}`
 };
 

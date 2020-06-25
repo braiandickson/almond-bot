@@ -7,9 +7,10 @@ const greatings = [
 ];
 
 const randoms = [
-  'Jajaja que idita!',
+  'Jajaja que idiota!',
   'Miau miau miau hue hue hue',
-  'Que tanta mierda hablan?!'
+  'Que tanta mierda hablan?!',
+  'Iris ini giti girdi bli bli bli'
 ];
 
 const defaultMsg = 'Miau miau, desgraciade!'

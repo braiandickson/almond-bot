@@ -15,7 +15,8 @@ client.on('ready', () => {
 console.log(msgCount);
 client.on('message', receiveMessage => {
   if (receiveMessage.author == client.user) return;
-  msgCount = msgCount + 1;
+  ++msgCount;
+  console.log(msgCount);
   if (receiveMessage.content.startsWith(process.env.PREFIX)) {
     processCommand(receiveMessage);
   }
