@@ -1,8 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const _ = require('lodash');
 require('dotenv').config();
 
 const { processCommand } = require('./utils');
+const { commands } = require('./commands');
 
 let msgCount = 0;
 
@@ -10,15 +12,15 @@ client.on('ready', () => {
   console.log('Connected as ' + client.user.tag);
   client.user.setActivity('dominar el mundo');
 });
-
+console.log(msgCount);
 client.on('message', receiveMessage => {
   if (receiveMessage.author == client.user) return;
+  msgCount++;
   if (receiveMessage.content.startsWith(process.env.PREFIX)) {
     processCommand(receiveMessage);
-    msgCount++;
   }
-  if(msgCount === 15) {
-    receiveMessage.channel.send(commands['randoms']);
+  if(msgCount === 10) {
+    receiveMessage.channel.send(commands['randoms']());
     msgCount = 0;
   }
 });

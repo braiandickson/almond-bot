@@ -3,7 +3,7 @@ const { commands, commandsDeclaration, defaultMsg } = require('./commands');
 const processCommand = message => {
   const command = message.content.substr(1);
   if (commandsDeclaration.includes(command)) {
-    message.channel.send(commands[command]);
+    message.channel.send(commands[command]());
   } else {
     message.channel.send(defaultMsg);
   }

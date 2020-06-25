@@ -3,13 +3,13 @@ const { commandMessage, defaultMsg, imgs, greatings, randoms } = require('./mess
 
 const commandsDeclaration = ['comandos', 'hola', 'foto'];
 
+const getRandomMsg = list => _.sample(list);
+
 const commands = {
-  hola: _.sample(greatings),
-  foto: _.sample(imgs),
-  randoms: randoms,
-  comandos: [
-    `${commandMessage} ${commandsDeclaration}`
-  ]
+  hola: () => getRandomMsg(greatings),
+  foto: () => getRandomMsg(imgs),
+  randoms: () => getRandomMsg(randoms),
+  comandos: () => `${commandMessage} ${commandsDeclaration}`
 };
 
 module.exports = { commands, commandsDeclaration, defaultMsg };
