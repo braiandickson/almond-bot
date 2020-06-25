@@ -1,8 +1,4 @@
-const _ = require('lodash');
-
 const { commands, commandsDeclaration, defaultMsg } = require('./commands');
-
-const getRandomMsg = messages => messages && _.sample(messages);
 
 const processCommand = message => {
   const command = message.content.substr(1);
@@ -13,4 +9,4 @@ const processCommand = message => {
   }
 };
 
-module.exports = { processCommand, getRandomMsg };
+module.exports = { processCommand };
