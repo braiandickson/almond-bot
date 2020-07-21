@@ -22,7 +22,7 @@
   "dependencies": {
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nodemon": "^2.0.4",
     "now": "^19.0.1",
     "vercel": "^19.0.1"
